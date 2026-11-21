@@ -11,7 +11,7 @@ Tech Stack
 - uv
 
 Project Structure
-
+```
 src/app/
 ├── main.py
 ├── routers/
@@ -20,20 +20,22 @@ src/app/
 │   └── item.py
 └── services/
     └── item_service.py
-
+```
 ## Installation & Run
 
-** Clone repository **
-`git clone https://github.com/yeasin4745/fastapi.git`
-`cd fastapi`
+Clone repository 
+
+```git clone https://github.com/yeasin4745/fastapi.git```
+```cd fastapi```
 
 # Install dependencies
-`pip install uv`
-`uv sync`
+```pip install uv```
+```uv sync```
 
 # Start development server
 ```uv run uvicorn app.main:app --reload```
 
+`
 Server: "http://127.0.0.1:8000"
 
 API Documentation: "/docs"
@@ -41,7 +43,8 @@ API Documentation: "/docs"
 API Endpoints
 
 Base URL: "/api/v1"
-
+`
+```
 Method| Endpoint| Description
 GET| "/"| Root
 GET| "/health"| Health check
@@ -50,8 +53,8 @@ GET| "/items/"| Get all items
 GET| "/items/{item_id}"| Get item
 PUT| "/items/{item_id}"| Update item
 DELETE| "/items/{item_id}"| Delete item
-
-Request Example
+```
+## Request Example
 ```
 {
   "name": "Keyboard",
